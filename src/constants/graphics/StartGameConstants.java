@@ -19,7 +19,7 @@ public class StartGameConstants {
     public static final int STRING_EXIT_LEFT_MARGIN = 350;
     public static final int STRING_EXIT_TOP_MARGIN = 320;
 
-    public Image getImageShip() {
+    public static Image getImageShip() {
         return imageShip.getImage();
     }
 }

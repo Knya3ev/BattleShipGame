@@ -6,7 +6,7 @@ public class Player {
     private String name;
     private int[] numberShips;
     private int stepIndexForShips;
-    private final int[] ships = new int[]{3,4}; //new int[]{1, 1, 1, 1, 2, 2, 2, 3, 3, 4};
+    private final int[] ships = new int[]{1, 1, 1, 1, 2, 2, 2, 3, 3, 4};
     private int numberOFAllShips;
     private int numberOfActions;
     private boolean onlyPlayer;

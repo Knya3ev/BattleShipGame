@@ -20,20 +20,29 @@ public class GameGraphics implements ImageObserver {
     }
 
     public void startGame(Graphics g, int x, int y) {
-        StartGameConstants c = new StartGameConstants();
-        g.setFont(c.FONT);
+        g.setFont(StartGameConstants.FONT);
         g.setColor(Color.white);
         g.drawImage(
-                c.getImageShip(),
-                c.IMAGE_SHIP_LEFT_MARGIN,
-                c.IMAGE_SHIP_TOP_MARGIN,
-                c.IMAGE_SHIP_WIDTH,
-                c.IMAGE_SHIP_HEIGHT,
+                StartGameConstants.getImageShip(),
+                StartGameConstants.IMAGE_SHIP_LEFT_MARGIN,
+                StartGameConstants.IMAGE_SHIP_TOP_MARGIN,
+                StartGameConstants.IMAGE_SHIP_WIDTH,
+                StartGameConstants.IMAGE_SHIP_HEIGHT,
                 this);
 
-        g.drawString("BattleShip", c.STRING_BATTLE_SHIP_LEFT_MARGIN, c.STRING_BATTLE_SHIP_TOP_MARGIN);
-        g.drawString("Start", c.STRING_START_LEFT_MARGIN, c.STRING_START_TOP_MARGIN);
-        g.drawString("Exit", c.STRING_EXIT_LEFT_MARGIN, c.STRING_EXIT_TOP_MARGIN);
+        g.drawString(
+                "BattleShip",
+                StartGameConstants.STRING_BATTLE_SHIP_LEFT_MARGIN,
+                StartGameConstants.STRING_BATTLE_SHIP_TOP_MARGIN);
+        g.drawString(
+                "Start",
+                StartGameConstants.STRING_START_LEFT_MARGIN,
+                StartGameConstants.STRING_START_TOP_MARGIN);
+        g.drawString(
+                "Exit",
+                StartGameConstants.STRING_EXIT_LEFT_MARGIN,
+                StartGameConstants.STRING_EXIT_TOP_MARGIN);
+
         drawAim(g, x, y);
     }
 
